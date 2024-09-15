@@ -14,8 +14,6 @@ import xlrd
 import folium
 import openrouteservice
 import pickle
-from utils import persistence_ab as pe
-from io import BytesIO
 import xlsxwriter
 import random
 
