@@ -248,11 +248,11 @@ try:
         lat_inizio = centro_mappa.lat.iloc[-1]
         lng_inizio = centro_mappa.lng.iloc[-1]
         if (not lat_inizio) or (str(lat_inizio)=='nan'):
-            lat_inizio = coordinate_exera[0]
+            lat_inizio = coordinate_exera[1]
             lng_inizio = coordinate_exera[0]
             lat_inizio = work.lat.iloc[1]
             lng_inizio = work.lng.iloc[0]
-            if (not lat_inizio) or (str(lat_inizio)=='nan'):
+            if (not lat_inizio) or (str(lat_inizio)=='nan')or (str(lng_inizio)=='nan'):
                 lat_inizio = coordinate_exera[1]
                 lng_inizio = coordinate_exera[0]
 
